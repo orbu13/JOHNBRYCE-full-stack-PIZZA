@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pizza Bar</title>
+    <style>
+        h1 {
+            background-color: green;
+            border: 3px solid purple;
+        }
+    </style>
+</head>
+
+<body style="background-color: blueviolet;">
+    <div>
+        <div>
+            <h1 id="orderPizzaHeader" class="pizzaHeaderClass">
+                Order Pizza
+            </h1>
+            <h2 class="pizzaHeaderClass">
+                Pizz form
+            </h2>
+        </div>
+        <div style="background-color: red; ">
+            <img height="200"
+                src="https://www.creativefabrica.com/wp-content/uploads/2022/04/17/Pizza-Logo-Design-Graphics-29132095-1.jpg"
+                alt="">
+            <form class="center" action="https://www.prego.co.il/events/" method="get">
+                <div>
+                    <span id="pizzaTypeIdIsTheBest"> Pizza Type </span>
+                    <input class="pizzaType" type="text" name="pizza-type" value="napolitana">
+                </div>
+                <div>
+                    <div>
+                        <span id="pizzaToppings"> Toppings </span>
+                    </div>
+                    <div class="pizzaTopings">
+                        <span> olives </span> <input name="olives" type="checkbox" checked="checked" value="true">
+                        <span> extra </span> <input name="extra" type="checkbox" value="true">
+                        <span> mushrooms </span> <input name="mushrooms" type="checkbox" value="true">
+                        <span> tuna </span> <input name="tuna" type="checkbox" value="true">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <span> size </span>
+                        <span class="pizzaSize">
+                            <span> Small </span><input name="size" type="radio" value="s">
+                            <span> Medium </span><input name="size" type="radio" value="m">
+                            <span> Large </span><input name="size" type="radio" value="l">
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Click me" class="submitush">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <h1 style="background-color: green; border: 3px solid purple;">
+            Orders history
+        </h1>
+        <table>
+            <thead>
+                <tr>
+                    <th> Pizza </th>
+                    <th> price </th>
+                    <th> date </th>
+                    <th> image </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> napolitana </td>
+                    <td> 20 </td>
+                    <td> 12-12-2023 </td>
+                    <td> <img height="50" width="50"
+                            src="https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg"
+                            alt=""> </td>
+                </tr>
+                <tr>
+                    <td> olives </td>
+                    <td> 100 </td>
+                    <td> 01-01-2024 </td>
+                    <td> <img height="50" width="50"
+                            src="https://www.allrecipes.com/thmb/fFW1o307WSqFFYQ3-QXYVpnFj6E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/48727-Mikes-homemade-pizza-DDMFS-beauty-4x3-BG-2974-a7a9842c14e34ca699f3b7d7143256cf.jpg"
+                            alt=""></td>
+                </tr>
+                <tr>
+                    <td> extra cheese </td>
+                    <td> 150 </td>
+                    <td> 01-02-2024 </td>
+                    <td> <img height="50" width="50"
+                            src="https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg"
+                            alt=""> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
+
+
+
+<!-- 1. New HTML with name: product list
+2. add new table
+3. table columns - product name, product price, product category, (challenge - product image )
+4. insert 4 products as data into your table -->
